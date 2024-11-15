@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="overlay">
+            <div class="medium-image"></div>
+        </div>
+        <h1 class="name">Hamza Karagöz</h1>
+        <p class="title">Student at IKU</p>
+    </header>
+
+    
+    <div class="container">
+
+        <div class="social-sidebar">
+          <a href="https://www.facebook.com" target="_blank">
+              <img src="/assets/images/facebook.png" alt="Facebook icon"> Facebook
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+              <img src="/assets/images/insta.png" alt="Instagram icon"> Instagram
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+              <img src="/assets/images/twiter.png" alt="Twitter icon"> Twitter
+          </a>
+          <a href="https://www.linkedin.com" target="_blank">
+              <img src="/assets/images/in.png" alt="LinkedIn icon"> Linkedin
+          </a>
+          <a href="https://plus.google.com" target="_blank">
+              <img src="/assets/images/g.png" alt="Google Plus icon"> Google+
+          </a>
+          <a href="https://www.youtube.com" target="_blank">
+              <img src="/assets/images/youtube.png" alt="YouTube icon"> YouTube
+          </a>   
+        </div>
+
+        <div class="middle-section">
+          <div class="welcome">
+            <h4>Welcome to my page</h4>
+        </div>
+          <div class="section" id="aboutMe">
+              <h3>ABOUT ME</h3>
+              <p>I am a computer engineer which is a broad word under which there are many job roles. As a computer engineer I would be responsible for developing, designing, testing and implementing various computer based software and hardware, which includes certain components found inside the computer equipment. 
+              Furthermore, I can care for the devices within the computer and the software which power these machines. Finally, I can design the network and assure its security by integrating various software programs and hardware. Computer engineers are in heavy demand all through the business sectors in the world.</p>
+          </div>
+          <div class="section" id="education">
+              <h3>EDUCATION</h3>
+              <p> Artificial Intelligence (AI) <br>
+                Game Design<br>
+              Web Programming</p>
+          </div>
+          <div class="section" id="experience">
+              <h3>EXPERIENCE</h3>
+              <p>I formatted the computer a few times.</p>
+          </div>
+          <div class="section" id="skills">
+              <h3>SKILLS</h3>
+              <img src="./assets/images/skills1.jpg">
+              <img src="./assets/images/skills2.jpg">
+              <img src="./assets/images/skills3.jpg">
+              <img src="./assets/images/skills4.jpg">
+              <img src="./assets/images/skills5.png">
+              <img src="./assets/images/skills6.png">
+              <img src="./assets/images/skills7.png">
+          </div>
+          <div class="section" id="hobbies">
+              <h3>HOBBIES AND INTERESTS</h3>
+              <p>Coding, online games, powerlifting.</p>
+          </div>
+        </div>
+
+        <div class="right-box">
+          <div class="inner-box">
+            <h3>Quick ID</h3>
+            <p>
+                Phone:       544-538-4090<br><br>
+                Email:       h4k4r4g@gmail.com<br><br>
+                Website:     www.iku.edu.tr<br><br>
+                Address:     Ataköy 7-8-9-10, E5 Karayolu Üzeri Ataköy Yerleşkesi<br>
+            </p>
+          </div>
+          <div class="contact-box">
+            <h3>Contact Me</h3>
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="half-width">
+                  <label for="firstName">First Name*</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="half-width">
+                  <label for="lastName">Last Name*</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="half-width">
+                  <label for="email">Email*</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="half-width">
+                  <label for="tel">Phone Number</label>
+                  <input type="tel" id="tel" name="tel">
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="half-width">
+                  <label for="date">Date</label>
+                  <input type="date" id="date" name="date">
+                </div>
+                <div class="half-width">
+                  <label for="time">Time</label>
+                  <input type="time" id="time" name="time">
+                </div>
+              </div>
+              
+              <label for="subject">Subject*</label>
+              <input type="text" id="subject" name="subject" required>
+              
+              <label for="message">Message*</label>
+              <textarea id="message" name="message" required></textarea>
+              
+              <button type="submit">Submit</button>
+            </form>
+            <p id="errorMessage" style="color: red; display: none;">Enter all required fields(*)</p>
+          </div>
+          <!-- Teşekkür Mesajı - Başlangıçta gizli -->
+          <div id="thankYouMessage" style="display:none; text-align: center;">
+            <h3>Thank You!</h3>
+            <p>Your message has been sent!</p>
+            <p>You sent the message:</p>
+            <p id="messageDetails"></p>
+            <p id="messageCount"></p> <!-- Mesaj sayısını burada göstereceğiz -->
+            <p>To send a new message, <a href="javascript:void(0);" id="newMessageLink">click here</a></p>
+          </div>
+        </div>
+        
+    </div>
+      <footer class="footer">
+      <p>Last Update: 15/11/2024 - 04:00 GMT</p>
+      <p>Copyright @ 2024</p>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>

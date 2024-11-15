@@ -1,0 +1,304 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+    background-image: url("./assets/images/header_background.jpg"); /* Header'ı kaplayan büyük resim */
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.overlay::before, .overlay::after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.overlay::before {
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 50px;
+    background-image: url("./assets/images/Eng.png"); /* İlk küçük resim */
+    background-size: cover;
+    background-position: center;
+    padding-right: 5px; /* Çizgi ile resim arasında boşluk */
+    box-sizing: content-box; /* Padding'in resme etki etmesi için */
+    border-right: 2px solid #25b608;
+}
+
+.overlay::after {
+    top: 10px;
+    left: 98px; 
+    width: 80px;
+    height: 50px;
+    background-image: url("./assets/images/Tur.png"); /* İkinci küçük resim */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sağ Üst */
+.overlay .medium-image {
+    position: absolute;
+    top: 50%; 
+    right: 10px; 
+    transform: translateY(-50%); 
+    width: 400px;
+    height: 200px;
+    background-image: url("./assets/images/header_rightside.jpg"); 
+    background-size: cover;
+    background-position: center;
+}
+.name {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 70px;
+    margin: 0;
+    color: #ddd;
+}
+
+.title {
+    font-family: Tahoma, sans-serif;
+    font-size: 30px;
+    margin: 0;
+    color: #c26920;
+}
+
+/* sosyal medya */
+.social-sidebar {
+    position: fixed;
+    top: 335px;
+    left: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid #008080;
+    border-radius: 10px;
+    padding: 10px;
+    width: 180px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-sidebar a {
+    font-family: "Georgia";
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.social-sidebar a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.social-sidebar a:hover {
+    background-color: #3498db; 
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  
+  /* Sağ kutucuk */
+  .right-box {
+    width: 250px;
+    background-color: #f1f1f1;
+    padding: 7px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  /* İçerideki kutucuk */
+  .inner-box {
+    background-color: rgb(0, 71, 150);
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+  }
+  
+  h3 {
+    text-align: center;
+    color: #ddd;
+    border-bottom: 3px solid rgb(150, 0, 0); 
+    padding-bottom: 10px; 
+  }
+
+  p {
+    color: #ddd;
+  }
+
+  .contact-box {
+    background-color: rgb(173, 216, 230);
+    padding: 30px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .contact-box h3 {
+    text-align: center;
+    color: rgb(0, 0, 0); /* Başlık rengi */
+    border-bottom: 3px solid rgb(150, 0, 0); 
+    padding-bottom: 10px; 
+  }
+  
+  .contact-box label {
+    display: block;
+    margin-top: 1px;
+    font-weight: bold;
+  }
+  
+  .contact-box input,
+  .contact-box textarea {
+    width: 95%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  
+  .contact-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 71, 150);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-box button:hover {
+    background-color: rgb(0, 60, 130); /* Hover efekti */
+  }
+    /* Thank you message styles */
+  #thankYouMessage {
+    text-align: center;
+    color: black; 
+  }
+
+  #thankYouMessage h3 {
+    color: black; 
+  }
+
+  #thankYouMessage p {
+    color: black;
+  }
+
+  #newMessageLink {
+    color: rgb(0, 71, 150);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  #newMessageLink:hover {
+    color: rgb(0, 60, 130);
+  }
+  .middle-section {
+    width: 71%; 
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    border:3px dotted blue; 
+    border-radius: 20px;
+  }
+
+  .section {
+      padding: 20px;
+      margin-top: 5px;
+      border-radius: 20px;
+  }
+
+  /* arka plan  */
+  #aboutMe {
+      background-color: rgba(236, 176, 176); 
+  }
+
+  #education {
+      background-color: rgba(182, 237, 174); 
+  }
+
+  #experience {
+      background-color: rgba(224, 228, 87); 
+  }
+
+  #skills {
+      background-color: rgba(167, 146, 202); 
+  }
+
+  #hobbies {
+      background-color: rgba(184, 131, 129); 
+  }
+
+  /* Başlık stili */
+  .section h3 {
+      color: black;
+      font-size: 20px;
+      border-bottom: none; 
+      text-align: center;
+      margin-bottom: 0; 
+  }
+  .section p {
+      font-family: Arial;
+      font-size: 18px;
+      color: black;
+      text-align: justify;
+      
+  }
+  .welcome {
+      font-size: 30px;
+      color: blue; 
+      animation: blink-animation 2s infinite alternate; 
+      text-align: center;    
+  }
+  @keyframes blink-animation {
+    0% {
+        opacity: 1; 
+    }
+    50% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+  }
+  .middle-section img{
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    background-color: rgb(255, 255, 255);
+  }
+  /* Footer  */
+  .footer {
+    background-color: black;
+    text-align: center; 
+    padding: 20px; 
+    font-family: 'Copperplate'; 
+    font-size: 20px; 
+    bottom: 0; 
+    border-radius: 20px;
+    width: 100%; 
+  }
+
+
+  .footer p {
+    color: rgb(255, 0, 0);
+    margin: 5px 0; 
+  }
